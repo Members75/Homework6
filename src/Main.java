@@ -55,7 +55,7 @@ public class Main {
 
         int total = 0;
         int initialAmount = 29000;
-        for (int i = 0; i <= 12; i++) {
+        for (int i = 1; i <= 12; i++) {
             total = total + initialAmount;
             System.out.println(" Месяц " + i + " сумма накоплений равна " + total + " рублей. ");
         }
@@ -65,9 +65,10 @@ public class Main {
 
         int totalAmount = 0;
         int startAmount = 29000;
-        for (int i = 0; i <= 12; i++) {
-            totalAmount = totalAmount + totalAmount/100;
+        for (int i = 1; i <= 12; i++) {
             totalAmount = totalAmount + startAmount;
+            totalAmount = totalAmount + totalAmount/100;
+
             System.out.println(" Месяц " + i + " сумма накоплений равна " + totalAmount + " рублей. ");
 
         }
